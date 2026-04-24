@@ -1,3 +1,6 @@
-.PHONY: all
+.PHONY: all clean
 all:
-	gcc -o test main.c buddy.c
+	gcc -O2 -std=c11 -Wall -Wextra -o code main.c buddy.c
+
+clean:
+	rm -f code
